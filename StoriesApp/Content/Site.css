@@ -1,0 +1,50 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.card {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+    transition: 0.1s;
+    width: 40%;
+    float: left;
+    padding: 20px;
+    margin: 25px;
+}
+
+.card:hover {
+    box-shadow: 0 3px 2px 0 rgba(0,0,0,0.2);
+}
+
+
+.card-container {
+    padding: 2px 16px;
+}
+
+.margin-right-btn {
+    margin-right: 5px;
+}

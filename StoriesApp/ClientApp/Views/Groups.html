@@ -1,0 +1,27 @@
+﻿
+<div class="row ng-cloak" ng-controller="groupsCtrl">
+    <div class="col-md-12">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Group Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Stories Count</th>
+                        <th>Users Count</th>
+                    </tr>
+                </thead>
+                <tbody class="ng-cloak">
+                    <tr ng-repeat="group in Groups">
+                        <td>{{group.id}}</td>
+                        <td>{{group.name}}</td>
+                        <td style="width:50%">{{group.description}}</td>
+                        <td>{{group.storiesCount}}</td>
+                        <td>{{group.usersCount}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

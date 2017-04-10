@@ -1,0 +1,32 @@
+﻿<div class="row ng-cloak" ng-controller="storiesCtrl">
+    <div class="col-md-12" style="margin-bottom:20px;">
+        <a class="btn btn-default" href="#/add">Add Story</a>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-6" id="story_{{story.id}}" ng-repeat="story in Stories">
+
+        <!-- well -->
+        <div class="well">
+            <code>
+                {{story.postedOn}}
+            </code>
+            <h3>
+                {{story.title}} 
+            </h3>
+            <p>
+                {{story.description}} 
+            </p>
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a  href="#/view/{{story.id}}" class="btn btn-default pull-right">
+                            View
+                        </a>
+                        <a href="#/update/{{story.id}}" class="btn btn-success margin-right-btn pull-right" >
+                            Edit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

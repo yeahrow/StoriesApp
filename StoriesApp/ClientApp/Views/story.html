@@ -1,0 +1,59 @@
+﻿<div class="row ng-cloak" ng-controller="storyCtrl">
+    <form novalidate name="frmStory" id="frmStory" class="form-horizontal row-border">
+        <br />
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17"> Title</label>
+                <div class="col-md-7">
+                    <input type="text"
+                           id="idTitle"
+                           class="form-control"
+                           name="title" ng-model="title" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17"> Description</label>
+                <div class="col-md-7">
+                    <input type="text"
+                           id="idDescription"
+                           class="form-control"
+                           name="description" ng-model="description" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17"> Content</label>
+                <div class="col-md-7">
+                    <textarea id="idContent"
+                              class="form-control"
+                              name="content" ng-model="content"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="input17"> Groups</label>
+                <div class="col-md-7">
+                    <label class="checkbox-inline" ng-repeat="group in Groups">
+                        <input type="checkbox" ng-model="group.selected" value="{{group.id}}">
+                        {{group.name}}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-7">
+                    <a class="btn btn-default margin-right-btn" href="#/stories">Back To Stories</a>
+                    
+                    <span id="save" class="btn btn-success margin-right-btn"
+                          ng-click="SaveUpdate()">
+                        <i class="icon-save"></i> Save
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+

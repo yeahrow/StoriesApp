@@ -1,0 +1,34 @@
+﻿<div class="row" ng-controller="loginCtrl">
+    <div class="col-md-8">
+        <section id="loginForm">
+            <div class="form-horizontal">
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">
+                        Name
+                    </label>
+                    <div class="col-md-10">
+                        <input ng-model="name" type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">
+                        Password
+                    </label>
+                    <div class="col-md-10">
+                        <input ng-model="password" type="password" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input ng-click="Login()" type="button" value="Log in" class="btn btn-default" />
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+</div>
+

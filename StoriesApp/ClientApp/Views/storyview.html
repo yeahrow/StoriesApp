@@ -1,0 +1,43 @@
+﻿<div class="row ng-cloak" ng-controller="storyCtrl">
+    <form novalidate name="frmStory" id="frmStory" class="form-horizontal row-border">
+        <br />
+        <div class="col-md-12">
+            <div class="form-group">
+                <div class="col-md-12">
+                    <h1>
+                        {{title}}
+                    </h1>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <code>
+                        {{description}}
+                    </code>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <p>
+                        {{content}}
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <span ng-hide="!group.selected" ng-repeat="group in Groups" class="label label-warning">{{group.name}}</span>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <a class="btn btn-default margin-right-btn" href="#/stories">Back To Stories</a>                                        
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+

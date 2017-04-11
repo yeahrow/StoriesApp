@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\IStoriesRepository.cs" />
-    <Compile Include="DataAccess\Repositories\EF\StoriesDB.cs" />
     <Compile Include="DataAccess\Repositories\EF\StoriesDBContext.cs" />
     <Compile Include="DataAccess\Repositories\EF\Stories\Group.cs" />
     <Compile Include="DataAccess\Repositories\EF\Stories\IStoriesEntity.cs" />

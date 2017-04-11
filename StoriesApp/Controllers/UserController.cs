@@ -33,6 +33,7 @@ namespace StoriesApp.Controllers
 
             if (await _userService.CheckUserCredentials(new UserEntity { Name = model.Name,Password=model.Password }))
             {
+                // this is wrong solution NEED Token based auth, this is only for demo
                 FormsAuthentication.SetAuthCookie(model.Name, false);
 
                 return Json(new { success = true, message = "Successfully Logged in." });
